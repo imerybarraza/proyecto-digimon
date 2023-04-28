@@ -29,4 +29,11 @@ body{
     position: fixed;
     right: 2rem;
     bottom: 2rem;
+    width: 60px;
+    height: 60px;
+}
+
+.fa{
+    font-size: 30px !important;
+    color: rgb(47, 28, 65);
 }

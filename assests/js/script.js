@@ -5,6 +5,7 @@ const levelModal = document.getElementById("level-modal")
 const myModal = document.getElementById('myModal')
 const imageModal = document.getElementById('image-modal')
 const btnUp = document.querySelector(".btn-up")
+
 const fetchData = () => {
     fetch(URL)
         .then(res => res.json())
@@ -19,7 +20,7 @@ let datos = ""
 const showData = (data) => {
     datos = data
     data.map((item, i) => {
-        var { name, img, level } = item
+        const { name, img, level } = item
         const article = document.createElement('article')
         article.classList.add('card')
         article.innerHTML = `
